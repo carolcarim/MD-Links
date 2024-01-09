@@ -7,20 +7,25 @@ Tienes dos opciones para aprovechar esta herramienta: como un módulo que puedes
 
 Puedes instalar esta librería utilizando NPM (Node Package Manager). Simplemente ejecuta el siguiente comando en tu terminal:
 
-        npm install -g extractor-enlaces-md 
+       npm install -g coralcarim-mdlinks
+
+       El flag -g instala el paquete de manera global, lo que permite usar el comando md-links desde cualquier ubicación en tu sistema.
 
 <h3>Uso</h3>
 
 · Como Módulo en Proyectos
 
-       const extractor = require('extractor-enlaces-md');
+       const extractor = require('coralcarim-mdlinks');
 
        const filePath = 'ruta/del/archivo.md';
 
 
 · Como Interfaz de Línea de Comandos (CLI)
 
-       extractor-enlaces-md ruta/del/archivo.md
+       mdlinks ruta/del/archivo.md 
+       mdlinks ruta/del/archivo.md --validate
+       mdlinks ruta/del/archivo.md --stats
+       mdlinks ruta/del/archivo.md --validate --stats
 
 <h3>Contribuciones</h3>
 
